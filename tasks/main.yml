@@ -47,6 +47,7 @@
 - name: Append any additional environment variables
   ansible.builtin.set_fact:
     _unifi_docker_env_vars: "{{ _unifi_docker_env_vars | combine(unifi_environment_variables) }}"
+  when: unifi_environment_variables
 
 - name: Ensure the docker-compose template directory exists
   ansible.builtin.file:
