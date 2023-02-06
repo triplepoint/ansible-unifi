@@ -10,6 +10,9 @@ unifi_exec_user_and_group_id: "1999"
 # The version tag of the `goofball222/unifi` docker hub image.
 unifi_docker_image_version: "latest"
 
+# Unifi volume base path
+unifi_docker_volume_path: "/opt/unifi"
+
 # Should we pass SSL certificates to the service?
 # See the `SSL custom certificate auto-configuration support` section at:
 # https://hub.docker.com/r/goofball222/unifi/
